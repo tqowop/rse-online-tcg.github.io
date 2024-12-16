@@ -1,0 +1,129 @@
+body{
+  background-color: #EDF2F4;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container{
+  /* width: 450px;
+  height: 600px; */
+/* 
+  border-radius: 25px; */
+
+}
+
+#inner_container{
+  /* width: 450px;
+  height: 600px; */
+
+  /* box-shadow: 0px 0px 36px -22px #2B2D42; */
+  float: left;
+  margin-bottom: 33px;
+
+}
+
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px;
+  border-radius: 10px; */
+
+}
+
+#button_container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  width: 25%;
+  height: 90%;
+
+  font-size: 20px;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  border-radius: 5px;
+  background-color: #e73617;
+}
+
+button:hover{
+  transition: 0.05s;
+  background-color: #f0c60b;
+  transform: rotateZ(-5deg);
+  box-shadow: 0 0 30px -10px #697174;
+}
+
+button:active{
+  transform: translateY(20px);
+  transform: rotateZ(10deg);
+
+}
+
+/* .flip-card-container */
+.flip-card-container {
+  width: 400px;
+  height: 700px;
+  margin: 40px;
+  perspective: 1000px;
+}
+
+/* .flip-card */
+.bijines-card-flip {
+  width: inherit;
+  height: inherit;
+
+  position: relative;
+  transform-style: preserve-3d;
+  transition: .7s .2s;
+}
+
+/* hover and focus-within states */
+.flip-card-container:hover .bijines-card-flip,
+.flip-card-container:focus-within .bijines-card-flip {
+  transform: rotateY(180deg);
+}
+
+/* .card-... */
+.bijines-card-front,
+.bijines-card-back {
+  width: 100%;
+  height: 100%;
+  /* border-radius: 24px; */
+
+  /* background: var(--dark); */
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+
+  backface-visibility: hidden;
+  /* box-shadow: rgba(0, 0, 0, 0.25) 0px 5px 15px; */
+
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: center;
+}
+
+/* .card-front */
+.bijines-card-front {
+  transform: rotateY(0deg);
+  /* background-color: #ebebeb; */
+  z-index: 2;
+}
+
+/* .card-back */
+.bijines-card-back {
+  transform: rotateY(180deg);
+  /* background-color: #ebebeb; */
+  z-index: 1;
+  
+}
